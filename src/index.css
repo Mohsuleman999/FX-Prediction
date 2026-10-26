@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  .font-mono,
+  .tabular-nums {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom Audio Equalizer Slider Styling */
+input[type="range"].equalizer-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  height: 28px;
+}
+
+input[type="range"].equalizer-slider:focus {
+  outline: none;
+}
+
+/* Track */
+input[type="range"].equalizer-slider::-webkit-slider-runnable-track {
+  height: 6px;
+  background: #1e293b;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+input[type="range"].equalizer-slider::-moz-range-track {
+  height: 6px;
+  background: #1e293b;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Thumb styled like an audio console fader knob */
+input[type="range"].equalizer-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -9px;
+  background: linear-gradient(180deg, #14b8a6 0%, #0d9488 100%);
+  height: 24px;
+  width: 14px;
+  border-radius: 3px;
+  border: 1px solid #2dd4bf;
+  box-shadow: 0 0 10px rgba(20, 184, 166, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+input[type="range"].equalizer-slider::-moz-range-thumb {
+  background: linear-gradient(180deg, #14b8a6 0%, #0d9488 100%);
+  height: 24px;
+  width: 14px;
+  border-radius: 3px;
+  border: 1px solid #2dd4bf;
+  box-shadow: 0 0 10px rgba(20, 184, 166, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+input[type="range"].equalizer-slider:hover::-webkit-slider-thumb {
+  transform: scaleY(1.08);
+  background: linear-gradient(180deg, #2dd4bf 0%, #0f766e 100%);
+}
+
+/* Custom Scrollbar for Fintech Dashboard */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070b14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}

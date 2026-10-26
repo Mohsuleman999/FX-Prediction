@@ -1,0 +1,8 @@
+{
+  "name": "Meridian AI: Business Forecasting & Predictive Intelligence",
+  "description": "Interactive predictive analytics dashboard and financial forecasting simulator for Meridian Tech Distribution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
